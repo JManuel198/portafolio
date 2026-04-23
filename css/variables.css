@@ -1,0 +1,22 @@
+:root {
+    /*Colores para fondo claro*/
+    --color-primary: #8d99ae;     /* tu color de acento — el que va en botones y detalles */
+    --color-bg: #E9ECEF;          /* fondo de la página */
+    --color-text: #0F084B;        /* texto principal */
+    --color-text-muted: #29274C;  /* texto secundario, subtítulos */
+    --color-text-white: #FFFFF2;  /* texto para contraste de botones*/
+
+    --font-heading: "Clash-Display", sans-serif;  /* para títulos */
+    --font-body: "Satoshi", serif;     /* para texto corrido */
+
+    --spacing-xs: 0.5rem;
+    --spacing-sm: 1rem;
+    --spacing-md: 2rem;
+    --spacing-lg: 4rem;
+
+    --text-sm: 0.875rem;
+    --text-md: 1rem;
+    --text-lg: 1.25rem;
+    --text-xl: 1.80rem;
+    --text-hero: 7rem;
+}
