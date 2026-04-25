@@ -15,6 +15,19 @@ header {
     width: 100%;
     justify-content: space-between;
     padding: var(--spacing-sm);
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    background-color: transparent;
+    /*difuminamos con:*/
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    /*transición:*/
+    transition: background-color 0.5s ease;
+}
+
+.my-nav.scrolled {
     background-color: var(--color-primary);
 }
 
