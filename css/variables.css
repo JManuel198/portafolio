@@ -18,5 +18,11 @@
     --text-md: 1rem;
     --text-lg: 1.25rem;
     --text-xl: 1.80rem;
+    --text-xxl: 2.25rem;
     --text-hero: 7rem;
+
+    --border-sm: 1rem;
+    --border-md: 1.25rem;
+    --border-lg: 1.5rem;
+    --border-xl: 2rem;
 }

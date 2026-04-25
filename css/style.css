@@ -118,3 +118,35 @@ p {
     gap: var(--spacing-md);
     }
 
+/* Sobre mi*/
+.container {
+    width: 100%; /*todo el ancho*/
+    max-width: 1000px; /*maximo de pixeles a extenderse*/
+    margin: 0 auto; /*quita el margen vertical y centra el contenido en horizontal*/
+    padding: var(--spacing-md);
+    background-color: #a5b5d1;
+    border-radius: var(--border-md);
+}
+
+#sobre-mi {
+    background-color: var(--color-bg);
+    padding: var(--spacing-lg) 0; /*arriba y a los lados*/
+}
+
+#sobre-mi h2 {
+    font-family: var(--font-heading);
+    font-size: var(--text-xxl);
+    font-weight: 600;
+    color: var(--color-text);
+    margin: 0 0 var(--spacing-sm) var(--spacing-sm);
+}
+
+#sobre-mi p {
+    font-family: var(--font-body);
+    font-size: var(--text-lg);
+    color: var(--color-text-muted);
+    line-height: 1.7;
+    max-width: 65ch; /*maximo 65 caracteres a lo ancho*/
+    text-align: justify;
+    margin: 0 auto; /*centra el párrafo*/
+}
