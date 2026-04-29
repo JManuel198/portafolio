@@ -8,6 +8,8 @@ header {
     flex-direction: column;
     justify-content: flex-start;
     align-items: center;
+    padding-top: 82px; /* altura de la nav */
+    box-sizing: border-box;
 }
 
 .my-nav {
@@ -127,10 +129,14 @@ p {
     border-radius: var(--border-md);
 }
 
+.card-section {
+    background-color: #a5b5d1;
+    border-radius: var(--border-md);
+}
+
 #sobre-mi {
     background-color: var(--color-bg);
     padding: var(--spacing-lg) 0; /*arriba y a los lados*/
-    background-color: #a5b5d1;
 }
 
 #sobre-mi h2 {
