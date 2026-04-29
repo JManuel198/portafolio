@@ -124,13 +124,13 @@ p {
     max-width: 1000px; /*maximo de pixeles a extenderse*/
     margin: 0 auto; /*quita el margen vertical y centra el contenido en horizontal*/
     padding: var(--spacing-md);
-    background-color: #a5b5d1;
     border-radius: var(--border-md);
 }
 
 #sobre-mi {
     background-color: var(--color-bg);
     padding: var(--spacing-lg) 0; /*arriba y a los lados*/
+    background-color: #a5b5d1;
 }
 
 #sobre-mi h2 {
