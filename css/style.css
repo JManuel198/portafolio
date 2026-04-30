@@ -129,17 +129,17 @@ p {
     border-radius: var(--border-md);
 }
 
-.card-section {
+.card-section-about-me {
     background-color: #a5b5d1;
     border-radius: var(--border-md);
 }
 
-#sobre-mi {
+#about-me {
     background-color: var(--color-bg);
     padding: var(--spacing-lg) 0; /*arriba y a los lados*/
 }
 
-#sobre-mi h2 {
+#about-me h2 {
     font-family: var(--font-heading);
     font-size: var(--text-xxl);
     font-weight: 600;
@@ -147,7 +147,7 @@ p {
     margin: 0 0 var(--spacing-sm) var(--spacing-sm);
 }
 
-#sobre-mi p {
+#about-me p {
     font-family: var(--font-body);
     font-size: var(--text-lg);
     color: var(--color-text-muted);
@@ -155,4 +155,25 @@ p {
     max-width: 65ch; /*maximo 65 caracteres a lo ancho*/
     text-align: justify;
     margin: 0 auto; /*centra el párrafo*/
+}
+
+.card-section-project {
+    background-color: #6f84a7;
+}
+
+/* Grid para las cards */
+.projects-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: var(--spacing-md);
+}
+
+/* Flexbox dentro de cada card */
+.project-card {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-sm);
+    padding: var(--spacing-md);
+    border-radius: var(--border-md);
+    background-color: var(--color-bg);
 }
