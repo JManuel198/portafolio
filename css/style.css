@@ -47,15 +47,14 @@ header {
     padding-right: var(--spacing-md);
 }
 
-a {
+.nav-links a {
     color: var(--color-text);
     font-family: var(--font-body);
     text-decoration: none;
 }
 
-a:hover {
-    background-color: #6f84a7;
-    border-radius: 5px;
+.nav-links a:hover {
+    text-decoration: underline;
 }
 
 .projects-link {
@@ -120,10 +119,19 @@ p {
     gap: var(--spacing-md);
     }
 
+.hero-text a {
+    color: var(--color-text);
+    font-weight: 500;
+    text-decoration: none;
+}
+
+.hero-text a:hover {
+    text-decoration: underline;
+}
+
 /* Sobre mi*/
 .container {
     width: 100%; /*todo el ancho*/
-    max-width: 1000px; /*maximo de pixeles a extenderse*/
     margin: 0 auto; /*quita el margen vertical y centra el contenido en horizontal*/
     padding: var(--spacing-md);
     border-radius: var(--border-md);
@@ -132,11 +140,15 @@ p {
 .card-section-about-me {
     background-color: #a5b5d1;
     border-radius: var(--border-md);
+    max-width: 1000px; /*maximo de pixeles a extenderse*/
 }
 
 #about-me {
+    min-height: 100vh;
     background-color: var(--color-bg);
     padding: var(--spacing-lg) 0; /*arriba y a los lados*/
+    display: flex;
+    align-items: center;
 }
 
 #about-me h2 {
@@ -155,16 +167,36 @@ p {
     max-width: 65ch; /*maximo 65 caracteres a lo ancho*/
     text-align: justify;
     margin: 0 auto; /*centra el párrafo*/
+    padding: var(--spacing-sm) var(--spacing-sm); /*espaciado horizontal para pantallas pequeñas*/
+}
+
+.projects {
+    min-height: 100vh;
+    background-color: var(--color-bg);
+    padding: var(--spacing-lg) 0; /*arriba y a los lados*/
+    display: flex;
+    align-items: center;
 }
 
 .card-section-project {
-    background-color: #6f84a7;
+    background-color: #a5b5d1;
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: var(--spacing-lg);
+}
+
+.card-section-project h2 {
+    font-family: var(--font-heading);
+    font-size: var(--text-xxl);
+    font-weight: 600;
+    color: var(--color-text);
+    margin: 0 0 var(--spacing-lg) var(--spacing-sm);
 }
 
 /* Grid para las cards */
 .projects-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
     gap: var(--spacing-md);
 }
 
@@ -176,4 +208,44 @@ p {
     padding: var(--spacing-md);
     border-radius: var(--border-md);
     background-color: var(--color-bg);
+}
+
+.card-body {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-sm);
+    font-family: var(--font-body);
+}
+
+.card-body h3 {
+    font-family: var(--font-heading);
+    font-size: var(--text-xl);
+    font-weight: 600;
+    color: var(--color-text);
+    margin: 0;
+}
+
+.card-body p {
+    font-size: var(--text-lg);
+    color: var(--color-text-muted);
+    line-height: 1.5;
+    margin: 0;
+}
+
+.card-body a {
+    color: var(--color-text);
+    font-weight: 500;
+    align-self: flex-start;
+    text-decoration: none;
+}
+
+.card-body a:hover {
+    text-decoration: underline;
+}
+
+.card-tags {
+    margin-bottom: var(--spacing-xs);
+    list-style: none;
+    display: flex;
+    gap: var(--spacing-md);
 }
