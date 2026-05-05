@@ -170,10 +170,10 @@ p {
     padding: var(--spacing-sm); /*espaciado horizontal para pantallas pequeñas*/
 }
 
-.projects {
+#projects {
     min-height: 100vh;
     background-color: var(--color-bg);
-    padding: var(--spacing-lg) 0; /*arriba y a los lados*/
+    padding: var(--spacing-xxl) 0; /*arriba y a los lados*/
     display: flex;
     align-items: center;
 }
@@ -181,7 +181,7 @@ p {
 .card-section-project {
     background-color: #a5b5d1;
     max-width: 1400px;
-    margin: 0 auto;
+    margin: auto;
     padding: var(--spacing-lg);
 }
 
