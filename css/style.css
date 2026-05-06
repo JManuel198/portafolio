@@ -121,6 +121,7 @@ p {
 
 .hero-text a {
     color: var(--color-text);
+    font-family: var(--font-body);
     font-weight: 500;
     text-decoration: none;
 }
