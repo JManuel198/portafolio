@@ -182,7 +182,6 @@ p {
 .card-section-project {
     background-color: #a5b5d1;
     max-width: 1400px;
-    margin: auto;
     padding: var(--spacing-lg);
 }
 
@@ -269,7 +268,6 @@ p {
 .card-section-skills {
     background-color: #a5b5d1;
     max-width: 1400px;
-    margin: 0 auto;
     padding: var(--spacing-lg);
 }
 
