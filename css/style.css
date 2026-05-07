@@ -343,3 +343,87 @@ p {
 .skill-header:hover {
     text-decoration: underline;
 }
+
+/* Contacto */
+#contact {
+    min-height: 100vh;
+    padding: var(--spacing-xxl) 0 0 0;
+    display: flex;
+    align-items: center;
+}
+
+.card-section-contact {
+    background-color: #a5b5d1;
+    max-width: 700px;
+    padding: var(--spacing-lg);
+}
+
+.card-section-contact h2 {
+    font-family: var(--font-heading);
+    font-size: var(--text-xxl);
+    font-weight: 600;
+    color: var(--color-text);
+    margin-bottom: var(--spacing-sm);
+}
+
+.contact-desc {
+    font-size: var(--text-lg);
+    color: var(--color-text-muted);
+    margin-bottom: var(--spacing-md);
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-sm);
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.form-group label {
+    font-family: var(--font-body);
+    font-size: var(--text-md);
+    font-weight: 500;
+    color: var(--color-text);
+}
+
+.form-group input,
+.form-group textarea {
+    font-family: var(--font-body);
+    font-size: var(--text-md);
+    color: var(--color-text);
+    background-color: var(--color-bg);
+    border: none;
+    border-radius: var(--border-sm);
+    padding: var(--spacing-sm);
+    resize: none;
+    outline: none;
+    width: 100%;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+    outline: 2px solid var(--color-primary);
+}
+
+.submit-btn {
+    align-self: flex-start;
+    font-family: var(--font-body);
+    font-size: var(--text-md);
+    font-weight: 600;
+    color: var(--color-text-white);
+    background-color: var(--color-text);
+    border: none;
+    border-radius: var(--border-sm);
+    padding: var(--spacing-sm) var(--spacing-md);
+    cursor: pointer;
+    transition: opacity 0.2s ease;
+}
+
+.submit-btn:hover {
+    opacity: 0.85;
+}
