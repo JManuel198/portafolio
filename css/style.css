@@ -347,14 +347,14 @@ p {
 /* Contacto */
 #contact {
     min-height: 100vh;
-    padding: var(--spacing-xxl) 0 0 0;
+    padding: var(--spacing-xxl) 0 var(--spacing-xxl) 0;
     display: flex;
     align-items: center;
 }
 
 .card-section-contact {
     background-color: #a5b5d1;
-    max-width: 700px;
+    max-width: 1000px;
     padding: var(--spacing-lg);
 }
 
