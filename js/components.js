@@ -8,7 +8,7 @@ const navbar = document.querySelector('.my-nav');
     }
     });
 // Animación de la lista de skills
-const skillHeaders = document.querySelectorAll('.skills-header');
+const skillHeaders = document.querySelectorAll('.skill-header');
 let skillActivo = null;
 for (const header of skillHeaders) {
     header.addEventListener('click', () => {
