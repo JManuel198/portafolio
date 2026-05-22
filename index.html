@@ -12,13 +12,13 @@
 <body>
     <header>
         <!-- Barra de navegación -->
-        <nav class="my-nav">
-            <div class="nav-brand">
-                <img src="./assets/img/bocchi.jpg" alt="Manuel Jauregui" class="img-logo">
-                <span class="logo">Manuel Jauregui</span>
+        <nav class="navbar">
+            <div class="navbar__brand">
+                <img src="./assets/img/bocchi.jpg" alt="Manuel Jauregui" class="navbar__pfp">
+                <span class="navbar__logo">Manuel Jauregui</span>
             </div>
-            <ul class="nav-links">
-                <li><a href="#about-me">Sobre Mí</a></li>
+            <ul class="navbar__links">
+                <li><a href="#aboutme">Sobre Mí</a></li>
                 <li><a href="#projects">Proyectos</a></li>
                 <li><a href="#skills">Skills</a></li>
                 <li><a href="#contact">Contacto</a></li>
@@ -26,83 +26,84 @@
         </nav>
         <!-- Hero -->
         <div class="hero">
-            <div class="hero-text">
-                <h1>Manuel Jauregui</h1>
-                <p>Estudiante de Análisis de Sistemas · Desarrollo Web</p>
-                <a href="#projects" class="projects-link">Ver proyectos</a>
+            <div class="hero__content">
+                <h1 class="hero__title">Manuel Jauregui</h1>
+                <p class="hero__subtitle">Estudiante de Análisis de Sistemas · Desarrollo Web</p>
+                <a href="#projects" class="hero__link">Ver proyectos</a>
             </div>
-            <div class="hero-img">
-                <img src="./assets/img/bocchi.jpg" alt="Manuel Jauregui" class="img-pfp">
+            <div class="hero__pfp-wrapper">
+                <img src="./assets/img/bocchi.jpg" alt="Manuel Jauregui" class="hero__pfp">
             </div>
         </div>
     </header>
 
     <main>
-        <section id="about-me">
-            <div class="container card-section-about-me">
-                <h2>Sobre mí</h2>
-                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptates nam aut nesciunt. Voluptas ducimus quae possimus illum, veritatis, cupiditate quidem repellat ut voluptates porro enim, officiis et similique qui tempora. Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum nemo neque quo totam est eligendi suscipit obcaecati laudantium aspernatur voluptatem laborum similique quos incidunt, magnam soluta tenetur molestiae. Aperiam, officiis. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos blanditiis facere illum obcaecati, ex, tenetur, beatae sit quibusdam aliquid suscipit repudiandae fuga officiis! Voluptatem quas dolor ipsa itaque culpa aliquid.</p>
+        <section id="aboutme">
+            <div class="aboutme__content">
+                <h2 class="aboutme__title">Sobre mí</h2>
+                <p class="aboutme__desc">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptates nam aut nesciunt. Voluptas ducimus quae possimus illum, veritatis, cupiditate quidem repellat ut voluptates porro enim, officiis et similique qui tempora. Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum nemo neque quo totam est eligendi suscipit obcaecati laudantium aspernatur voluptatem laborum similique quos incidunt, magnam soluta tenetur molestiae. Aperiam, officiis. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos blanditiis facere illum obcaecati, ex, tenetur, beatae sit quibusdam aliquid suscipit repudiandae fuga officiis! Voluptatem quas dolor ipsa itaque culpa aliquid.</p>
             </div>
         </section>
 
         <section id="projects">
-            <div class="container card-section-project">
-                <h2>Proyectos</h2>
-                <div class="projects-grid">
+            <div class="projects__content">
+                <h2 class="projects__title">Proyectos</h2>
+                <div class="projects__grid">
+
                     <div class="project-card">
-                        <img src="./assets/img/bocchi.jpg" alt="Proyecto 1">
-                        <div class="card-body">
-                            <h3>Proyecto 1</h3>
-                            <p>Descripción corta del problema que resuelve</p>
-                            <ul class="card-tags">
+                        <img src="./assets/img/bocchi.jpg" alt="Proyecto 1" class="project-card__img">
+                        <div class="project-card__content">
+                            <h3 class="project-card__title">Proyecto 1</h3>
+                            <p class="project-card__desc">Descripción corta del problema que resuelve</p>
+                            <ul class="project-card__tags">
                                 <li>HTML</li>
                                 <li>CSS</li>
                                 <li>JavaScript</li>
                             </ul>
-                            <a href="#">Ver proyecto</a>
+                            <a href="#" class="project-card__link">Ver proyecto</a>
                         </div>
                     </div>
 
                     <!-- Se repite un project-card por proyecto-->
                     <div class="project-card">
-                        <img src="./assets/img/megumin.jpg" alt="Proyecto 2">
-                        <div class="card-body">
-                            <h3>Proyecto 2</h3>
-                            <p>Descripción corta del problema que resuelve</p>
-                            <ul class="card-tags">
+                        <img src="./assets/img/megumin.jpg" alt="Proyecto 2" class="project-card__img">
+                        <div class="project-card__content">
+                            <h3 class="project-card__title">Proyecto 2</h3>
+                            <p class="project-card__desc">Descripción corta del problema que resuelve</p>
+                            <ul class="project-card__tags">
                                 <li>HTML</li>
                                 <li>CSS</li>
                                 <li>JavaScript</li>
                             </ul>
-                            <a href="#">Ver proyecto</a>
+                            <a href="#" class="project-card__link">Ver proyecto</a>
                         </div>
                     </div>
 
                     <div class="project-card">
-                        <img src="./assets/img/maki.jpg" alt="Proyecto 3">
-                        <div class="card-body">
-                            <h3>Proyecto 3</h3>
-                            <p>Descripción corta del problema que resuelve</p>
-                            <ul class="card-tags">
+                        <img src="./assets/img/maki.jpg" alt="Proyecto 3" class="project-card__img">
+                        <div class="project-card__content">
+                            <h3 class="project-card__title">Proyecto 3</h3>
+                            <p class="project-card__desc">Descripción corta del problema que resuelve</p>
+                            <ul class="project-card__tags">
                                 <li>HTML</li>
                                 <li>CSS</li>
                                 <li>JavaScript</li>
                             </ul>
-                            <a href="#">Ver proyecto</a>
+                            <a href="#" class="project-card__link">Ver proyecto</a>
                         </div>
                     </div>
 
                     <div class="project-card">
-                        <img src="./assets/img/chiyuki.jpg" alt="Proyecto 4">
-                        <div class="card-body">
-                            <h3>Proyecto 4</h3>
-                            <p>Descripción corta del problema que resuelve</p>
-                            <ul class="card-tags">
+                        <img src="./assets/img/chiyuki.jpg" alt="Proyecto 4" class="project-card__img">
+                        <div class="project-card__content">
+                            <h3 class="project-card__title">Proyecto 4</h3>
+                            <p class="project-card__desc">Descripción corta del problema que resuelve</p>
+                            <ul class="project-card__tags">
                                 <li>HTML</li>
                                 <li>CSS</li>
                                 <li>JavaScript</li>
                             </ul>
-                            <a href="#">Ver proyecto</a>
+                            <a href="#" class="project-card__link">Ver proyecto</a>
                         </div>
                     </div>
 
@@ -111,37 +112,29 @@
         </section>
 
         <section id="skills">
-            <div class="container card-section-skills">
-                <h2>Skills</h2>
-                <div class="skills-list">
-                    <div class="skill-item">
-                        <button class="skill-header">
-                            <span>Python</span>
-                            <span class="skill-arrow">+</span>
-                        </button>
-                        <div class="skill-body">
-                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolorum consequatur blanditiis suscipit adipisci animi deserunt minima, necessitatibus possimus doloremque ab dolor, repellat repudiandae sunt nihil corporis veniam laborum iste provident!</p>
+            <div class="skills__content">
+                <h2 class="skills__title">Skills</h2>
+                <div class="skills__grid">
+
+                    <div class="skill-card" data-skill="html">
+                        <div class="skill-card__icon">
+                            <img src="./assets/icons/html.svg" alt="" aria-hidden="true">
                         </div>
+                        <span class="skill-card__name">HTML</span>
                     </div>
 
-                    <div class="skill-item">
-                        <button class="skill-header">
-                            <span>HTML</span>
-                            <span class="skill-arrow">+</span>
-                        </button>
-                        <div class="skill-body">
-                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolorum consequatur blanditiis suscipit adipisci animi deserunt minima, necessitatibus possimus doloremque ab dolor, repellat repudiandae sunt nihil corporis veniam laborum iste provident!</p>
+                    <div class="skill-card" data-skill="css">
+                        <div class="skill-card__icon">
+                            <img src="./assets/icons/css.svg" alt="" aria-hidden="true">
                         </div>
+                        <span class="skill-card__name">CSS</span>
                     </div>
 
-                    <div class="skill-item">
-                        <button class="skill-header">
-                            <span>CSS</span>
-                            <span class="skill-arrow">+</span>
-                        </button>
-                        <div class="skill-body">
-                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolorum consequatur blanditiis suscipit adipisci animi deserunt minima, necessitatibus possimus doloremque ab dolor, repellat repudiandae sunt nihil corporis veniam laborum iste provident!</p>
+                    <div class="skill-card" data-skill="html">
+                        <div class="skill-card__icon">
+                            <img src="./assets/icons/git.svg" alt="" aria-hidden="true">
                         </div>
+                        <span class="skill-card__name">GIT</span>
                     </div>
 
                 </div>
@@ -149,36 +142,38 @@
         </section>
 
         <section id="contact">
-            <div class="container card-section-contact">
-                <h2>Contacto</h2>
-                <p class="contact-desc">¿Tienes un proyecto en mente o quieres colaborar? Escríbeme.</p>
-                <form class="contact-form" action="https://formspree.io/f/meenllgg" method="POST">
-                    <div class="form-group">
-                        <label for="name">Nombre</label>
-                        <input type="text" id="name" name="name" placeholder="Tu nombre" required>
-                    </div>
-                    <div class="form-group">
-                        <label for="email">Correo</label>
-                        <input type="email" id="email" name="email" placeholder="tu@correo.com" required>
-                    </div>
-                    <div class="form-group">
-                        <label for="message">Mensaje</label>
-                        <textarea id="message" name="message" rows="5" placeholder="Tu mensaje aquí..." required></textarea>
-                    </div>
-                    <button type="submit" class="submit-btn">Enviar mensaje</button>
-                </form>
+            <div class="contact__content">
+                <h2 class="contact__title">Contacto</h2>
+                <p class="contact__desc">¿Tienes un proyecto en mente o quieres colaborar? Escríbeme.</p>
+                <div class="contact__form-wrapper">
+                    <form class="contact__form" action="https://formspree.io/f/meenllgg" method="POST">
+                        <div class="contact__form-group">
+                            <label for="name">Nombre</label>
+                            <input type="text" id="name" name="name" placeholder="Tu nombre" required>
+                        </div>
+                        <div class="contact__form-group">
+                            <label for="email">Correo</label>
+                            <input type="email" id="email" name="email" placeholder="tu@correo.com" required>
+                        </div>
+                        <div class="contact__form-group">
+                            <label for="message">Mensaje</label>
+                            <textarea id="message" name="message" rows="5" placeholder="Tu mensaje aquí..." required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-submit">Enviar mensaje</button>
+                    </form>
+                </div>
             </div>
         </section>
     </main>
 
-    <footer class="my-footer">
-        <div class="footer-content">
-            <span class="footer-name">Manuel Jauregui</span>
-            <div class="footer-links">
+    <footer class="footer">
+        <div class="footer__content">
+            <span class="footer__logo">Manuel Jauregui</span>
+            <div class="footer__links">
                 <a href="#" target="_blank">GitHub</a>
                 <a href="#" target="_blank">LinkedIn</a>
             </div>
-            <span class="footer-copy">© 2026 Manuel Jauregui</span>
+            <span class="footer__copy">© 2026 Manuel Jauregui</span>
         </div>
     </footer>
 

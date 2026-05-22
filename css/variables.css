@@ -15,12 +15,12 @@
     --spacing-lg: 4rem;
     --spacing-xxl: 6rem;
 
-    --text-sm: 0.875rem;
-    --text-md: 1rem;
-    --text-lg: 1.25rem;
-    --text-xl: 1.80rem;
-    --text-xxl: 3.25rem;
-    --text-hero: 7rem;
+    --text-xs: 0.875rem; /*Footer, links pequeños*/
+    --text-sm: 1rem; /*Navbar, links*/
+    --text-md: 2rem; /*Párrafos, descripciones*/
+    --text-lg: 1.25rem; /*Subtitulos*/
+    --text-xl: 1.80rem; /*Titulos*/
+    --text-hero: 5rem; /*Hero*/
 
     --border-sm: 1rem;
     --border-md: 1.25rem;
