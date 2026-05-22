@@ -1,3 +1,5 @@
+import { animate } from 'animejs';
+
 // Animación de la barra de navegación
 const navbar = document.querySelector('.my-nav');
     window.addEventListener('scroll', () => {
@@ -25,3 +27,4 @@ for (const header of skillHeaders) {
         }
     });
 }
+
