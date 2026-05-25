@@ -71,7 +71,7 @@ body {
     }
 }
 
-/*Hero info in mobile*/
+/*Hero in mobile*/
 .hero {
     display: flex;
     flex-direction: column;
@@ -185,5 +185,53 @@ body {
     }
 }
 
-/*Aboutme section*/
+/*About me in mobile*/
+.about {
+    padding: var(--spacing-lg) var(--spacing-sm);
+}
 
+.about__wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-md);
+}
+
+.about__title {
+    font-family: var(--font-title);
+    font-size: clamp(1.8rem, 6vw, 3.5rem);
+    font-weight: 900;
+    line-height: 1.1;
+    color: var(--color-text);
+}
+
+.about__body {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-sm);
+    padding: 0 var(--spacing-sm);
+}
+
+.about__text {
+    font-family: var(--font-body);
+    font-size: clamp(1rem, 2vw, 1.30rem);
+    font-weight: 500;
+    color: var(--color-text-muted);
+    line-height: 1.7;
+}
+
+/* Desktop */
+@media (min-width: 1024px) {
+    .about {
+        padding: var(--spacing-xl);
+    }
+
+    .about__wrapper {
+        max-width: 780px;
+        gap: var(--spacing-lg);
+    }
+
+    .about__body {
+        padding-left: var(--spacing-md);
+        border-left: 2px solid var(--color-border);
+    }
+}
