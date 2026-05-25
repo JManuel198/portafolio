@@ -77,14 +77,16 @@ body {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    padding: var(--spacing-lg) var(--spacing-sm);
-    min-height: 90vh;
+    padding: 0 var(--spacing-sm) var(--spacing-lg) var(--spacing-sm);
+    min-height: 100vh;
 }
 
 .hero__wrapper {
     display: flex;
     flex-direction: column;
+    justify-content: center;
     align-items: center;
+    padding-bottom: var(--spacing-lg);
 }
 
 .hero__pfp {
