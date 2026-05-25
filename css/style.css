@@ -134,7 +134,14 @@ body {
 .hero__link:hover{
     text-decoration: underline;
 }
+/*Mobile grande*/
+@media (max-width: 700px) {
+    .hero {
+        padding: var(--spacing-md) var(--spacing-sm);
+    }
+}
 
+/*Desktop*/
 @media (min-width: 1280px) {
     .hero {
         min-height: 94vh;
