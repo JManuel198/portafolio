@@ -175,28 +175,3 @@ body {
         padding-top: var(--spacing-sm);
     }
 }
-
-.projects__grid {
-    display: grid;
-    grid-template-columns: 1fr;
-    gap: var(--spacing-md);
-    padding: var(--spacing-lg) var(--spacing-sm);
-}
-
-@media (min-width: 768px) {
-    .projects__grid {
-        grid-template-columns: repeat(2, 1fr);
-        padding: var(--spacing-xl) var(--spacing-md);
-    }
-}
-
-@media (min-width: 1200px) {
-    .projects__grid {
-        grid-template-columns: repeat(3, 1fr);
-    }
-}
-
-img {
-    width: 70px;
-    height: 70px;
-}
