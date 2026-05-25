@@ -330,9 +330,14 @@ body {
 
 /*Mobile mediano*/
 @media (min-height: 668px) {
-    .projects__grid {
-    grid-template-columns: repeat(2, 1fr);
+    .projects {
+        padding: var(--spacing-xl) var(--spacing-sm);
     }
+
+    .project-card:first-child {
+    margin: var(--spacing-lg) var(--spacing-md) 0;    
+    }
+
 }
 
 /*Desktop*/
@@ -340,6 +345,7 @@ body {
     .projects {
         padding: var(--spacing-xl);
     }
+
     .projects__grid {
     grid-template-columns: repeat(3, 1fr);
     }
