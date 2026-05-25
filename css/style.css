@@ -135,9 +135,9 @@ body {
     text-decoration: underline;
 }
 /*Mobile grande*/
-@media (min-width: 380px) {
+@media (min-width: 390px) {
     .hero {
-        padding: 10rem var(--spacing-sm);
+        padding: 10rem 1rem;
     }
 }
 
