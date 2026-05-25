@@ -11,15 +11,13 @@ body {
     position: sticky;
     top: 0;
     z-index: 100;
-    background: var(--color-navbar);
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    background: var(--color-bg);
     transition: background-color 0.3s ease, box-shadow 0.3s ease;
-    border-bottom: 2px solid var(--color-primary);
 }
 
 .navbar.scrolled {
-    background-color: var(--color-bg);
-    box-shadow: 0 1px 12px rgba(0, 0, 0, 0.08);
+    background-color: var(--color-navbar);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
 }
 
 .navbar__logo {
