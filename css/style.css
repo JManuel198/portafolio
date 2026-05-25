@@ -2,28 +2,74 @@ body {
     background-color: var(--color-bg);
 }
 
-
-/*Hero info in desktop*/
-.hero__title {
-    font-family: Satoshi;
-    font-weight: 900;
-    font-size: var(--text-hero);
+/*Navbar in mobile*/
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem var(--spacing-sm);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    background: var(--color-navbar);
 }
 
-.hero__subtitle {
-    font-family: Satoshi;
-    font-weight: 400;
-    font-size: var(--text-lg);
-}
-
-.hero__link {
-    color: var(--color-text-muted);
-    font-family: Satoshi;
-    font-size: var(--text-sm);
-    font-weight: 500;
+.navbar__logo {
+    font-size: clamp(1.25rem, 5vw, 1.60rem);
+    font-family: var(--font-body);
+    font-weight: 700;
+    color: var(--color-text);
     text-decoration: none;
 }
 
-.hero__link:hover{
-    text-decoration: underline;
+/*Ocultos en mobile temporalmente*/
+.navbar__links {
+    display: none;
+}
+
+/*Links visibles en desktop*/
+@media (min-width: 1024px) {
+    .navbar__links {
+        display: flex;
+        align-items: center;
+        gap: var(--spacing-md);
+        list-style: none;
+    }
+
+    .link-contact {
+        padding-right: var(--spacing-sm);
+    }
+
+    .navbar__links a {
+        color: var(--color-text);
+        font-size: var(--text-sm);
+        font-family: var(--font-body);
+        font-weight: 500;
+        text-decoration: none;
+    }
+
+    .navbar__links a:hover {
+        text-decoration: underline;
+    }
+}
+
+.navbar__brand {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    gap: var(--spacing-sm);
+}
+
+.navbar__pfp {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+@media (min-width: 1024px) {
+    .navbar__pfp {
+        width: 50px;
+        height: 50px;
+    }
 }

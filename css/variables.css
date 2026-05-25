@@ -1,7 +1,8 @@
 :root {
     /*Colores para fondo claro*/
-    --color-primary: #8d99ae;     /* tu color de acento — el que va en botones y detalles */
+    --color-primary: #7793c4;     /* tu color de acento — el que va en botones y detalles */
     --color-bg: #E9ECEF;          /* fondo de la página */
+    --color-navbar: #8d99ae;      /* fondo de la barra de navegación */
     --color-text: #0F084B;        /* texto principal */
     --color-text-muted: #29274C;  /* texto secundario, subtítulos */
     --color-text-white: #FFFFF2;  /* texto para contraste de botones*/
@@ -17,10 +18,10 @@
 
     --text-xs: 0.875rem; /*Footer, links pequeños*/
     --text-sm: 1rem; /*Navbar, links*/
-    --text-md: 2rem; /*Párrafos, descripciones*/
+    --text-md: 1.125rem; /*Párrafos, descripciones*/
     --text-lg: 1.25rem; /*Subtitulos*/
     --text-xl: 1.80rem; /*Titulos*/
-    --text-hero: 5rem; /*Hero*/
+    --text-hero: 2.5rem; /*Hero*/
 
     --border-sm: 1rem;
     --border-md: 1.25rem;
