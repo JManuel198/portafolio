@@ -1,11 +1,12 @@
 :root {
     /*Colores para fondo claro*/
-    --color-primary: #7793c4;     /* tu color de acento — el que va en botones y detalles */
+    --color-primary: #6d80a2;     /* tu color de acento — el que va en botones y detalles */
     --color-bg: #E9ECEF;          /* fondo de la página */
+    --color-bg-alt: #7793c4;      /* fondo de secciones o tarjetas */
     --color-navbar: #8d99ae;      /* fondo de la barra de navegación */
     --color-text: #0F084B;        /* texto principal */
     --color-text-muted: #29274C;  /* texto secundario, subtítulos */
-    --color-text-white: #FFFFF2;  /* texto para contraste de botones*/
+    --color-text-cards: #232155;  /* texto para contraste de botones*/
 
     --font-heading: "Clash-Display", sans-serif;  /* para títulos */
     --font-body: "Satoshi", serif;     /* para texto corrido */
