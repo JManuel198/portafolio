@@ -250,6 +250,8 @@ body {
 .projects__grid {
     display: grid;
     grid-template-columns: 1fr;
+    gap: var(--spacing-lg);
+    margin: 0 var(--spacing-sm);
 }
 
 .project-card:first-child {
@@ -271,7 +273,6 @@ body {
     display: flex;
     flex-direction: column;
     gap: var(--spacing-sm);
-    margin: var(--spacing-lg) var(--spacing-md) 0;
 }
 
 .project-card__title {
@@ -330,10 +331,9 @@ body {
 
 /*Mobile mediano*/
 @media (min-height: 668px) {
-    .project-card:first-child {
-    margin: var(--spacing-lg) var(--spacing-md) 0;    
+    .projects {
+        padding: var(--spacing-xl) var(--spacing-sm);
     }
-
 }
 
 /*Desktop*/
@@ -343,11 +343,12 @@ body {
     }
     
     .projects__grid {
-    grid-template-columns: repeat(3, 1fr);
+        grid-template-columns: repeat(4, 1fr);
+        margin: var(--spacing-lg) var(--spacing-sm);
     }
 
     .project-card:first-child {
-    margin: var(--spacing-lg) var(--spacing-md) 0;    
+        margin-top: 0;    
     }
 }
 
