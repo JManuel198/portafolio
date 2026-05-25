@@ -7,11 +7,12 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 1rem var(--spacing-sm);
+    padding: 1rem var(--spacing-md) 1rem var(--spacing-sm);
     position: sticky;
     top: 0;
     z-index: 100;
     background: var(--color-navbar);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
 }
 
 .navbar__logo {
@@ -36,13 +37,9 @@ body {
         list-style: none;
     }
 
-    .link-contact {
-        padding-right: var(--spacing-sm);
-    }
-
     .navbar__links a {
         color: var(--color-text);
-        font-size: var(--text-sm);
+        font-size: var(--text-md);
         font-family: var(--font-body);
         font-weight: 500;
         text-decoration: none;
@@ -71,5 +68,105 @@ body {
     .navbar__pfp {
         width: 50px;
         height: 50px;
+    }
+}
+
+/*Hero info in mobile*/
+.hero {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: var(--spacing-lg) var(--spacing-sm);
+    min-height: 90vh;
+}
+
+.hero__wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.hero__pfp {
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: var(--spacing-md);
+}
+
+.hero__content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: var(--spacing-md);
+    text-align: center;
+}
+
+.hero__title {
+    font-family: Satoshi;
+    font-weight: 900;
+    font-size: clamp(2.5rem, 5vw, 6rem);
+}
+
+.hero__subtitle {
+    font-family: Satoshi;
+    font-weight: 500;
+    font-size: clamp(1.25rem, 5vw, 1.7rem);
+}
+.hero__links {
+    display: flex;
+    gap: var(--spacing-md);
+}
+
+.hero__link {
+    color: var(--color-text-muted);
+    font-family: Satoshi;
+    font-size: clamp(1rem, 5vw, 1.10rem);
+    font-weight: 500;
+    text-decoration: none;
+    border: 2px solid var(--color-text-muted);
+    border-radius: var(--border-sm);
+    padding:0.5em 1em;
+}
+
+.hero__link:hover{
+    text-decoration: underline;
+}
+
+@media (min-width: 1280px) {
+    .hero {
+        min-height: 94vh;
+        flex-direction: row;
+        justify-content: start;
+        align-items: center;
+        padding: var(--spacing-lg) var(--spacing-lg);
+    }
+
+    .hero__wrapper {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: var(--spacing-lg);
+        width: auto;
+        margin: 0 var(--spacing-xl);
+    }
+
+    .hero__pfp {
+        width: 280px;
+        height: 280px;
+        margin-bottom: 0;
+    }
+
+    .hero__content {
+        justify-content: start;
+        align-items: flex-start;
+        gap: var(--spacing-sm);
+        height: 280px;
+    }
+
+    .hero__links {
+        gap: var(--spacing-sm);
+        padding-top: var(--spacing-sm);
     }
 }
