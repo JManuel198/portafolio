@@ -52,7 +52,7 @@ body {
 
 .navbar__brand {
     display: flex;
-    justify-content: start;
+    justify-content: flex-start;
     align-items: center;
     gap: var(--spacing-sm);
 }
@@ -138,7 +138,7 @@ body {
     .hero {
         min-height: 94vh;
         flex-direction: row;
-        justify-content: start;
+        justify-content: flex-start;
         align-items: center;
         padding: var(--spacing-lg) var(--spacing-lg);
     }
