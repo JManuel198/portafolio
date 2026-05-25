@@ -137,7 +137,7 @@ body {
 /*Mobile grande*/
 @media (min-width: 390px) {
     .hero {
-        padding: var(--spacing-lg) var(--spacing-sm);
+        padding: var(--spacing-xl) var(--spacing-sm);
     }
 }
 
