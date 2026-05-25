@@ -14,6 +14,7 @@ body {
     background: var(--color-navbar);
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
     transition: background-color 0.3s ease, box-shadow 0.3s ease;
+    border-bottom: 2px solid var(--color-primary);
 }
 
 .navbar.scrolled {
