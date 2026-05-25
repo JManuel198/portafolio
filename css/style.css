@@ -75,10 +75,10 @@ body {
 .hero {
     display: flex;
     flex-direction: column;
+    justify-content: flex-start;
     align-items: center;
-    justify-content: center;
-    padding: 0 var(--spacing-sm) var(--spacing-lg) var(--spacing-sm);
-    min-height: 100vh;
+    padding: var(--spacing-md) var(--spacing-sm);
+    min-height: 90vh;
 }
 
 .hero__wrapper {
@@ -86,7 +86,6 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding-bottom: var(--spacing-lg);
 }
 
 .hero__pfp {
@@ -153,6 +152,7 @@ body {
         gap: var(--spacing-lg);
         width: auto;
         margin: 0 var(--spacing-xl);
+        padding-bottom: var(--spacing-lg);
     }
 
     .hero__pfp {
@@ -177,3 +177,6 @@ body {
         padding-top: var(--spacing-sm);
     }
 }
+
+/*Aboutme section*/
+
