@@ -507,5 +507,24 @@ body {
         margin: var(--spacing-xl) auto;
         max-width: 900px;
     }
-
 }
+
+/*Footer*/
+.footer {
+    text-align: center;
+    padding: var(--spacing-md);
+    color: var(--color-text-muted);
+    font-family: var(--font-body);
+    font-size: clamp(0.875rem, 2vw, 1.125rem);
+    font-weight: 500;
+}
+
+.footer a {
+    color: var(--color-text-muted);
+    text-decoration: none;
+}
+
+.footer a:hover {
+    text-decoration: underline;
+}
+
