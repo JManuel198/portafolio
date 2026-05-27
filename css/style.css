@@ -22,7 +22,7 @@ body {
 
 .navbar__logo {
     font-size: clamp(1.25rem, 5vw, 1.60rem);
-    font-family: var(--font-body);
+    font-family: var(--font-heading);
     font-weight: 700;
     color: var(--color-text);
     text-decoration: none;
@@ -110,13 +110,13 @@ body {
 }
 
 .hero__title {
-    font-family: Satoshi;
+    font-family: var(--font-heading);
     font-weight: 900;
     font-size: clamp(2.5rem, 5vw, 6rem);
 }
 
 .hero__subtitle {
-    font-family: Satoshi;
+    font-family: var(--font-body);
     font-weight: 500;
     font-size: clamp(1.25rem, 5vw, 1.7rem);
 }
@@ -127,7 +127,7 @@ body {
 
 .hero__link {
     color: var(--color-text-muted);
-    font-family: Satoshi;
+    font-family: var(--font-body);
     font-size: clamp(1rem, 5vw, 1.10rem);
     font-weight: 500;
     text-decoration: none;
