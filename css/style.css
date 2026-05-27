@@ -202,7 +202,7 @@ body {
 }
 
 .about__title {
-    font-family: var(--font-title);
+    font-family: var(--font-heading);
     font-size: clamp(1.8rem, 6vw, 3.5rem);
     font-weight: 900;
     line-height: 1.1;
@@ -259,7 +259,7 @@ body {
 }
 
 .projects__title {
-    font-family: var(--font-title);
+    font-family: var(--font-heading);
     font-size: clamp(1.8rem, 6vw, 3.5rem);
     font-weight: 900;
     line-height: 1.1;
@@ -362,7 +362,7 @@ body {
 }
 
 .skills__title {
-    font-family: var(--font-title);
+    font-family: var(--font-heading);
     font-size: clamp(1.8rem, 6vw, 3.5rem);
     font-weight: 900;
     line-height: 1.1;
@@ -434,7 +434,7 @@ body {
 }
 
 .contact__title {
-    font-family: var(--font-title);
+    font-family: var(--font-heading);
     font-size: clamp(1.8rem, 6vw, 3.5rem);
     font-weight: 900;
     line-height: 1.1;
