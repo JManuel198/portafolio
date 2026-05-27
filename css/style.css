@@ -84,6 +84,21 @@ body {
     align-items: center;
     padding: var(--spacing-md) var(--spacing-sm);
     min-height: 90vh;
+    animation: hero-fade 700ms ease-out both;
+}
+
+/* Animación simple para mobile: aparición (fade + slight up) */
+@keyframes hero-fade {
+    0% {
+        transform: translateY(8%);
+        opacity: 0;
+        filter: blur(4px);
+    }
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+        filter: blur(0);
+    }
 }
 
 .hero__wrapper {
@@ -107,6 +122,26 @@ body {
     align-items: center;
     gap: var(--spacing-md);
     text-align: center;
+}
+
+@media (min-width: 1024px) {
+    .hero {
+        animation: hero-sweep 1100ms ease-out both;
+    }
+
+    /* Keyframes para animación (left --> right) */
+    @keyframes hero-sweep {
+        0% {
+            transform: translateX(-30%);
+            opacity: 0;
+            filter: blur(6px);
+        }
+        100% {
+            transform: translateX(0);
+            opacity: 1;
+            filter: blur(0);
+        }
+    }
 }
 
 .hero__title {
