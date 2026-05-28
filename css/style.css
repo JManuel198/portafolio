@@ -29,6 +29,11 @@ body {
     font-weight: 700;
     color: var(--color-text);
     text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.navbar.scrolled .navbar__logo {
+    color: var(--color-text-cards);
 }
 
 /*Ocultos en mobile temporalmente*/
@@ -51,6 +56,11 @@ body {
         font-family: var(--font-body);
         font-weight: 500;
         text-decoration: none;
+        transition: color 0.3s ease;
+    }
+
+    .navbar.scrolled .navbar__links a {
+        color: var(--color-text-cards);
     }
 
     .navbar__links a:hover {
@@ -164,18 +174,25 @@ body {
 }
 
 .hero__link {
-    color: var(--color-text-muted);
     font-family: var(--font-body);
     font-size: clamp(1rem, 5vw, 1.10rem);
     font-weight: 500;
     text-decoration: none;
-    border: 2px solid var(--color-text-muted);
     border-radius: var(--border-sm);
-    padding:0.5em 1em;
+    padding: 0.5em 1em;
+    border: 2px solid var(--color-text-muted);
+    color: var(--color-text-muted);
+    transition: opacity 0.2s ease;
 }
 
-.hero__link:hover{
-    text-decoration: underline;
+.hero__link--primary {
+    background-color: var(--color-primary);
+    border-color: var(--color-primary);
+    color: var(--color-text-cards);
+}
+
+.hero__link:hover {
+    opacity: 0.85;
 }
 /*Mobile mediano*/
 @media (min-height: 668px) {
@@ -306,7 +323,7 @@ body {
 }
 
 .project-card {
-    background-color: var(--color-bg-alt);
+    background-color: var(--color-card-bg);
     border-radius: var(--border-sm);
     padding: var(--spacing-md);
     display: flex;
@@ -365,9 +382,9 @@ body {
 }
 
 .project-card__link--github {
-    /*Colores temporales, luego cambiar por unos que diferencien*/
-    border-color: var(--color-text-cards);
-    color: var(--color-text-muted);
+    border-color: rgba(255, 255, 255, 0.4);
+    color: rgba(255, 255, 255, 0.7);
+    background-color: rgba(255, 255, 255, 0.05);
 }
 
 /*Mobile mediano*/
@@ -395,11 +412,19 @@ body {
     border-radius: var(--border-sm);
 }
 
-/*Skills in mobile*/
-.skills {
+/* Skills + Contacto — sección combinada en grid de 2 columnas */
+.skills-contact {
     padding: var(--spacing-lg) var(--spacing-sm);
 }
 
+.skills-contact__grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: var(--spacing-xl);
+    align-items: start;
+}
+
+/* Columna Skills */
 .skills__title {
     font-family: var(--font-heading);
     font-size: clamp(1.8rem, 6vw, 3.5rem);
@@ -423,7 +448,7 @@ body {
     background-color: var(--color-bg-alt);
     border-radius: var(--border-md);
     padding: var(--spacing-sm);
-    box-shadow: 0 1px 6px rgba(0, 0, 0, 0.8);
+    box-shadow: 0 1px 6px rgba(0, 0, 0, 0.15);
 }
 
 .skill-card__icon {
@@ -440,38 +465,19 @@ body {
 .skill-card__name {
     font-family: var(--font-body);
     font-size: clamp(0.875rem, 2vw, 1.125rem);
-    font-weight: 500;
-    color: var(--color-text-muted);
+    font-weight: 600;
+    color: var(--color-text-cards);
     background-color: var(--color-primary);
     padding: 0.25em 0.75em;
     border-radius: var(--border-sm);
 }
 
-/*Desktop*/
-@media (min-width: 1200px) {
-    .skills {
-        padding: var(--spacing-xl);
-    }
-    
-    .skills__grid {
-        grid-template-columns: repeat(7, 1fr);
-        gap: var(--spacing-lg);
-        margin: 0 var(--spacing-md)
-    }
-
-    .skill-card__icon {
-        width: 80px;
-        height: 80px;
-    }
-}
-
-/*Contact in mobile*/
+/* Columna Contacto */
 .contact {
     padding: var(--spacing-md);
     background-color: var(--color-bg-alt);
     border-radius: var(--border-md);
-    margin: var(--spacing-lg) var(--spacing-sm);
-    box-shadow: 0 1px 6px rgba(0, 0, 0, 0.8);
+    box-shadow: 0 1px 6px rgba(0, 0, 0, 0.15);
 }
 
 .contact__title {
@@ -485,12 +491,11 @@ body {
 
 .contact__desc {
     font-family: var(--font-body);
-    font-size: clamp(1rem, 2vw, 1.30rem);
+    font-size: clamp(1rem, 2vw, 1.20rem);
     font-weight: 500;
     color: var(--color-text-muted);
     line-height: 1.7;
     padding-bottom: var(--spacing-md);
-    margin: 0 var(--spacing-sm);
 }
 
 .contact__form-wrapper {
@@ -511,42 +516,64 @@ body {
     gap: var(--spacing-xs);
     color: var(--color-text);
     font-family: var(--font-body);
-    font-size: clamp(1.2rem, 2vw, 1.125rem);
+    font-size: clamp(0.875rem, 2vw, 1rem);
     font-weight: 600;
 }
 
 .contact__input, .contact__textarea {
     padding: var(--spacing-sm);
-    border: 2px solid var(--color-text-muted);
+    border: 2px solid var(--color-border);
     border-radius: var(--border-sm);
     font-family: var(--font-body);
-    font-size: clamp(1rem, 2vw, 1.125rem);
+    font-size: clamp(0.875rem, 2vw, 1rem);
     font-weight: 500;
-    color: var(--color-text-muted);
+    color: var(--color-text);
+    background-color: var(--color-bg);
+    transition: border-color 0.2s ease;
+}
+
+.contact__input:focus, .contact__textarea:focus {
+    outline: none;
+    border-color: var(--color-primary);
 }
 
 .btn-submit {
+    background-color: var(--color-primary);
     color: var(--color-text-cards);
     font-family: var(--font-body);
-    font-size: clamp(0.875rem, 2vw, 1.125rem);
-    font-weight: 500;
+    font-size: clamp(0.875rem, 2vw, 1rem);
+    font-weight: 600;
     text-decoration: none;
-    border: 2px solid var(--color-text-muted);
+    border: 2px solid var(--color-primary);
     border-radius: var(--border-sm);
-    padding:0.5em 1em;
+    padding: 0.5em 1.5em;
     align-self: flex-start;
+    cursor: pointer;
+    transition: opacity 0.2s ease;
 }
 
-.contact__link:hover{
-    text-decoration: underline;
+.btn-submit:hover {
+    opacity: 0.85;
 }
 
-/*Desktop*/
-@media (min-width: 1200px) {
-    .contact {
+/* Desktop: 2 columnas */
+@media (min-width: 1024px) {
+    .skills-contact {
         padding: var(--spacing-xl);
-        margin: var(--spacing-xl) auto;
-        max-width: 900px;
+    }
+
+    .skills-contact__grid {
+        grid-template-columns: 1fr 1fr;
+        gap: var(--spacing-lg);
+    }
+
+    .skill-card__icon {
+        width: 70px;
+        height: 70px;
+    }
+
+    .contact {
+        padding: var(--spacing-lg);
     }
 }
 

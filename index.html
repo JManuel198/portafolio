@@ -32,7 +32,7 @@
                     <h1 class="hero__title">Manuel Jauregui</h1>
                     <p class="hero__subtitle">Estudiante de Análisis de Sistemas · Desarrollo Web</p>
                     <div class="hero__links">
-                        <a href="#projects" class="hero__link">Ver proyectos</a>
+                        <a href="#projects" class="hero__link hero__link--primary">Ver proyectos</a>
                         <a href="#contact" class="hero__link">Contactar</a>
                     </div>
                 </div>
@@ -74,7 +74,6 @@
                         </div>
                     </div>
 
-                    <!-- Se repite un project-card por proyecto-->
                     <div class="project-card">
                         <img src="./assets/img/megumin.jpg" alt="Proyecto 2" class="project-card__img">
                         <div class="project-card__content">
@@ -130,57 +129,61 @@
             </div>
         </section>
 
-        <section id="skills" class="skills">
-            <div class="skills__content">
-                <h2 class="skills__title">Skills</h2>
-                <div class="skills__grid">
+        <section class="skills-contact">
+            <div class="skills-contact__grid">
 
-                    <div class="skill-card" data-skill="html">
-                        <div class="skill-card__icon">
-                            <img src="./assets/icons/html.svg" alt="" aria-hidden="true">
+                <!-- Columna izquierda: Skills -->
+                <div id="skills">
+                    <h2 class="skills__title">Skills</h2>
+                    <div class="skills__grid">
+
+                        <div class="skill-card" data-skill="html">
+                            <div class="skill-card__icon">
+                                <img src="./assets/icons/html.svg" alt="" aria-hidden="true">
+                            </div>
+                            <span class="skill-card__name">HTML</span>
                         </div>
-                        <span class="skill-card__name">HTML</span>
-                    </div>
 
-                    <div class="skill-card" data-skill="css">
-                        <div class="skill-card__icon">
-                            <img src="./assets/icons/css.svg" alt="" aria-hidden="true">
+                        <div class="skill-card" data-skill="css">
+                            <div class="skill-card__icon">
+                                <img src="./assets/icons/css.svg" alt="" aria-hidden="true">
+                            </div>
+                            <span class="skill-card__name">CSS</span>
                         </div>
-                        <span class="skill-card__name">CSS</span>
-                    </div>
 
-                    <div class="skill-card" data-skill="git">
-                        <div class="skill-card__icon">
-                            <img src="./assets/icons/git.svg" alt="" aria-hidden="true">
+                        <div class="skill-card" data-skill="git">
+                            <div class="skill-card__icon">
+                                <img src="./assets/icons/git.svg" alt="" aria-hidden="true">
+                            </div>
+                            <span class="skill-card__name">GIT</span>
                         </div>
-                        <span class="skill-card__name">GIT</span>
-                    </div>
 
+                    </div>
                 </div>
-            </div>
-        </section>
 
-        <section id="contact" class="contact">
-            <div class="contact__content">
-                <h2 class="contact__title">Contacto</h2>
-                <p class="contact__desc">¿Tienes un proyecto en mente o quieres colaborar? Escríbeme.</p>
-                <div class="contact__form-wrapper">
-                    <form class="contact__form" action="https://formspree.io/f/meenllgg" method="POST">
-                        <div class="contact__form-group">
-                            <label for="name">Nombre</label>
-                            <input type="text" id="name" class="contact__input" name="name" placeholder="Tu nombre" required>
-                        </div>
-                        <div class="contact__form-group">
-                            <label for="email">Correo</label>
-                            <input type="email" id="email" class="contact__input" name="email" placeholder="tu@correo.com" required>
-                        </div>
-                        <div class="contact__form-group">
-                            <label for="message">Mensaje</label>
-                            <textarea id="message" class="contact__input contact__textarea" name="message" rows="5" placeholder="Tu mensaje aquí..." required></textarea>
-                        </div>
-                        <button type="submit" class="btn btn-submit">Enviar mensaje</button>
-                    </form>
+                <!-- Columna derecha: Contacto -->
+                <div id="contact" class="contact">
+                    <h2 class="contact__title">Contacto</h2>
+                    <p class="contact__desc">¿Tienes un proyecto en mente o quieres colaborar? Escríbeme.</p>
+                    <div class="contact__form-wrapper">
+                        <form class="contact__form" action="https://formspree.io/f/meenllgg" method="POST">
+                            <div class="contact__form-group">
+                                <label for="name">Nombre</label>
+                                <input type="text" id="name" class="contact__input" name="name" placeholder="Tu nombre" required>
+                            </div>
+                            <div class="contact__form-group">
+                                <label for="email">Correo</label>
+                                <input type="email" id="email" class="contact__input" name="email" placeholder="tu@correo.com" required>
+                            </div>
+                            <div class="contact__form-group">
+                                <label for="message">Mensaje</label>
+                                <textarea id="message" class="contact__input contact__textarea" name="message" rows="5" placeholder="Tu mensaje aquí..." required></textarea>
+                            </div>
+                            <button type="submit" class="btn btn-submit">Enviar mensaje</button>
+                        </form>
+                    </div>
                 </div>
+
             </div>
         </section>
     </main>

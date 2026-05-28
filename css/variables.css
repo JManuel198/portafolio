@@ -1,15 +1,17 @@
 :root {
-    /*Colores para fondo claro*/
-    --color-primary: #596e92;     /* tu color de acento — el que va en botones y detalles */
-    --color-bg: #E9ECEF;          /* fondo de la página */
-    --color-bg-alt: #7793c4;      /* fondo de secciones o tarjetas */
-    --color-navbar: #5f7498;      /* fondo de la barra de navegación */
-    --color-text: #0F084B;        /* texto principal */
-    --color-text-muted: #29274C;  /* texto secundario, subtítulos */
-    --color-text-cards: #232155;  /* texto para contraste de botones*/
+    /* Colores para fondo claro - Tema Morado Minimalista */
+    --color-primary: #6D28D9;     /* Morado vibrante para botones, detalles y enlaces */
+    --color-bg: #F9F8FC;          /* Blanco con un toque muy sutil de lavanda para el fondo general */
+    --color-bg-alt: #EFEBF5;      /* Lila grisáceo muy claro para destacar tarjetas o secciones */
+    --color-card-bg: #2D1B69;     /* Morado profundo para tarjetas de proyecto */
+    --color-navbar: #4C3B71;      /* Morado oscuro y elegante para la barra de navegación */
+    --color-text: #1C192B;        /* Morado casi negro para el texto principal (alta legibilidad) */
+    --color-text-muted: #524E63;  /* Gris violáceo para texto secundario y subtítulos */
+    --color-text-cards: #FFFFFF;  /* Blanco puro para el texto que va dentro de botones o fondos oscuros */
+    --color-border: #C4BAD9;      /* Borde lavanda para divisores */
 
-    --font-heading: "Clash-Display", sans-serif;  /* para títulos */
-    --font-body: "Satoshi", serif;     /* para texto corrido */
+    --font-heading: "Clash-Display", sans-serif;
+    --font-body: "Satoshi", serif;
 
     --spacing-xs: 0.5rem;
     --spacing-sm: 1rem;
