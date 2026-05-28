@@ -139,7 +139,7 @@ body {
 
 @media (min-width: 1024px) {
     .hero {
-        animation: hero-sweep 1100ms ease-out both;
+        animation: hero-sweep 700ms ease-out both;
     }
 
     /* Keyframes para animación (left --> right) */
@@ -530,6 +530,9 @@ body {
     color: var(--color-text);
     background-color: var(--color-bg);
     transition: border-color 0.2s ease;
+    resize: none;
+    min-width: 100%;
+
 }
 
 .contact__input:focus, .contact__textarea:focus {
@@ -565,6 +568,10 @@ body {
     .skills-contact__grid {
         grid-template-columns: 1fr 1fr;
         gap: var(--spacing-lg);
+    }
+
+    .skills__grid {
+        grid-template-columns: repeat(4, 1fr);
     }
 
     .skill-card__icon {
