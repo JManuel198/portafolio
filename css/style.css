@@ -345,7 +345,7 @@ body {
     font-size: clamp(0.875rem, 2vw, 1.125rem);
     font-weight: 600;
     color: var(--color-text-cards);
-    padding-bottom: var(--spacing-sm);
+    padding: var(--spacing-sm) 0;
 }
 
 .project-card__tags {
