@@ -1,9 +1,4 @@
-// Animación de la barra de navegación
 const navbar = document.querySelector('.navbar');
-    window.addEventListener('scroll', () => {
-    if (window.scrollY > 30) {
-        navbar.classList.add('scrolled');
-    } else {
-        navbar.classList.remove('scrolled');
-    }
-    });
+window.addEventListener('scroll', () => {
+    navbar.classList.toggle('scrolled', window.scrollY > 50);
+}, { passive: true });

@@ -12,28 +12,34 @@ body {
     position: sticky;
     top: 0;
     z-index: 100;
-    background-color: rgba(249, 248, 252, 0);
-    backdrop-filter: blur(0px);
-    -webkit-backdrop-filter: blur(0px);
-    transition:
-        background-color 0.45s cubic-bezier(0.4, 0, 0.2, 1),
-        backdrop-filter 0.45s cubic-bezier(0.4, 0, 0.2, 1),
-        -webkit-backdrop-filter 0.45s cubic-bezier(0.4, 0, 0.2, 1),
-        box-shadow 0.45s cubic-bezier(0.4, 0, 0.2, 1),
-        border-color 0.45s cubic-bezier(0.4, 0, 0.2, 1);
-    border-bottom: 1px solid transparent;
+    transition: box-shadow 0.45s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* Capa de cristal: animar opacity es compositor-only, no requiere repaint por frame */
+.navbar::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    z-index: -1;
+    backdrop-filter: blur(14px);
+    -webkit-backdrop-filter: blur(14px);
+    background-color: rgba(249, 248, 252, 0.72);
+    border-bottom: 1px solid rgba(196, 186, 217, 0.35);
+    opacity: 0;
+    transition: opacity 0.45s cubic-bezier(0.4, 0, 0.2, 1);
+    pointer-events: none;
+}
+
+.navbar.scrolled::before {
+    opacity: 1;
 }
 
 .navbar.scrolled {
-    background-color: rgba(249, 248, 252, 0.72);
-    backdrop-filter: blur(14px);
-    -webkit-backdrop-filter: blur(14px);
-    border-bottom: 1px solid rgba(196, 186, 217, 0.35);
     box-shadow: 0 2px 20px rgba(45, 27, 105, 0.08);
 }
 
 .navbar__logo {
-    font-size: clamp(1.25rem, 5vw, 1.60rem);
+    font-size: clamp(1.30rem, 5vw, 1.80rem);
     font-family: var(--font-heading);
     font-weight: 700;
     color: var(--color-text);
