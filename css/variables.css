@@ -4,11 +4,14 @@
     --color-bg: #F9F8FC;          /* Blanco con un toque muy sutil de lavanda para el fondo general */
     --color-bg-alt: #EFEBF5;      /* Lila grisáceo muy claro para destacar tarjetas o secciones */
     --color-card-bg: #2D1B69;     /* Morado profundo para tarjetas de proyecto */
-    --color-navbar: #4C3B71;      /* Morado oscuro y elegante para la barra de navegación */
+    --color-navbar: #2D1B69;      /* Morado oscuro y elegante para la barra de navegación */
     --color-text: #1C192B;        /* Morado casi negro para el texto principal (alta legibilidad) */
     --color-text-muted: #524E63;  /* Gris violáceo para texto secundario y subtítulos */
     --color-text-cards: #FFFFFF;  /* Blanco puro para el texto que va dentro de botones o fondos oscuros */
     --color-border: #C4BAD9;      /* Borde lavanda para divisores */
+    --color-primary-hover: #5B21B6;   /* Morado más oscuro para hover de botones primarios */
+    --color-primary-light: #EDE9FE;   /* Morado muy claro para anillos y fondos sutiles */
+    --shadow-primary: 0 6px 24px rgba(109, 40, 217, 0.28); /* Sombra con tinte morado */
 
     --font-heading: "Clash-Display", sans-serif;
     --font-body: "Satoshi", serif;
