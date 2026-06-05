@@ -3,11 +3,6 @@ body {
     background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24'%3E%3Cg fill='%239C92AC' fill-opacity='0.13'%3E%3Cpolygon fill-rule='evenodd' points='8 4 12 6 8 8 6 12 4 8 0 6 4 4 6 0 8 4'/%3E%3C/g%3E%3C/svg%3E");
 }
 
-/*Navbar in mobile*/
-.navbar { 
-    will-change: transform;
-}
-
 .navbar {
     display: flex;
     justify-content: space-between;
@@ -21,6 +16,7 @@ body {
 
 /* Capa de cristal: animar opacity es compositor-only, no requiere repaint por frame */
 .navbar::before {
+    will-change: opacity;
     content: '';
     position: absolute;
     inset: 0;
@@ -168,6 +164,7 @@ body {
 }
 
 .hero__link--primary:hover {
+    will-change: transform;
     background-color: var(--color-primary-hover);
     border-color: var(--color-primary-hover);
     transform: translateY(-2px);
@@ -175,6 +172,7 @@ body {
 }
 
 .hero__link:not(.hero__link--primary):hover {
+    will-change: transform;
     background-color: var(--color-text-muted);
     color: var(--color-text-cards);
     border-color: var(--color-text-muted);
@@ -309,10 +307,6 @@ body {
 }
 
 .project-card {
-    will-change: transform;
-}
-
-.project-card {
     background-color: var(--color-card-bg);
     border-radius: var(--border-sm);
     padding: var(--spacing-md);
@@ -325,6 +319,7 @@ body {
 }
 
 .project-card:hover {
+    will-change: transform;
     transform: translateY(-6px);
     box-shadow: 0 16px 40px rgba(0, 0, 0, 0.4), 0 4px 16px rgba(109, 40, 217, 0.25);
 }
@@ -379,6 +374,7 @@ body {
 }
 
 .project-card__link:hover {
+    will-change: transform;
     background-color: var(--color-text-cards);
     color: var(--color-card-bg);
     transform: translateY(-1px);
@@ -450,10 +446,6 @@ body {
 }
 
 .skill-card {
-    will-change: transform;
-}
-
-.skill-card {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -467,6 +459,7 @@ body {
 }
 
 .skill-card:hover {
+    will-change: transform;
     transform: translateY(-4px);
     box-shadow: 0 8px 24px rgba(109, 40, 217, 0.18);
     border-color: var(--color-primary);
@@ -578,6 +571,7 @@ body {
 }
 
 .btn-submit:hover {
+    will-change: transform;
     background-color: var(--color-primary-hover);
     border-color: var(--color-primary-hover);
     transform: translateY(-2px);
