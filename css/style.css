@@ -4,6 +4,10 @@ body {
 }
 
 /*Navbar in mobile*/
+.navbar { 
+    will-change: transform;
+}
+
 .navbar {
     display: flex;
     justify-content: space-between;
