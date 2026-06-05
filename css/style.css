@@ -305,6 +305,10 @@ body {
 }
 
 .project-card {
+    will-change: transform;
+}
+
+.project-card {
     background-color: var(--color-card-bg);
     border-radius: var(--border-sm);
     padding: var(--spacing-md);
@@ -439,6 +443,10 @@ body {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(70px, 1fr));
     gap: var(--spacing-md);
+}
+
+.skill-card {
+    will-change: transform;
 }
 
 .skill-card {
