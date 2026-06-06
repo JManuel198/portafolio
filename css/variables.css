@@ -1,36 +1,51 @@
 :root {
-    /* Colores para fondo claro - Tema Morado Minimalista */
-    --color-primary: #6D28D9;     /* Morado vibrante para botones, detalles y enlaces */
-    --color-bg: #F9F8FC;          /* Blanco con un toque muy sutil de lavanda para el fondo general */
-    --color-bg-alt: #EFEBF5;      /* Lila grisáceo muy claro para destacar tarjetas o secciones */
-    --color-card-bg: #2D1B69;     /* Morado profundo para tarjetas de proyecto */
-    --color-navbar: #2D1B69;      /* Morado oscuro y elegante para la barra de navegación */
-    --color-text: #1C192B;        /* Morado casi negro para el texto principal (alta legibilidad) */
-    --color-text-muted: #524E63;  /* Gris violáceo para texto secundario y subtítulos */
-    --color-text-cards: #FFFFFF;  /* Blanco puro para el texto que va dentro de botones o fondos oscuros */
-    --color-border: #C4BAD9;      /* Borde lavanda para divisores */
-    --color-primary-hover: #5B21B6;   /* Morado más oscuro para hover de botones primarios */
-    --color-primary-light: #EDE9FE;   /* Morado muy claro para anillos y fondos sutiles */
-    --shadow-primary: 0 6px 24px rgba(109, 40, 217, 0.28); /* Sombra con tinte morado */
+  /* --- Color --- */
+    --bg-base: #0d0d12;        /* fondo principal, negro frío */
+    --bg-surface: #13131a;     /* cards, secciones alternas */
+    --bg-elevated: #1c1c28;    /* hover, elementos flotantes */
 
-    --font-heading: "Clash-Display", sans-serif;
-    --font-body: "Satoshi", serif;
+    --accent: #7c3aed;         /* púrpura — acción, énfasis */
+    --accent-hover: #6d28d9;   /* hover del CTA primario */
+    --accent-soft: #a78bfa;    /* texto de acento, etiquetas, iconos */
+    --accent-glow: rgba(124, 58, 237, 0.15); /* halos y bordes vivos */
 
-    --spacing-xs: 0.5rem;
-    --spacing-sm: 1rem;
-    --spacing-md: 2rem;
-    --spacing-lg: 4rem;
-    --spacing-xl: 6rem;
+    --text-primary: #f1f0f5;
+    --text-secondary: #9998a8;
 
-    --text-xs: 0.875rem; /*Footer, links pequeños*/
-    --text-sm: 1rem; /*Navbar, links*/
-    --text-md: 1.125rem; /*Párrafos, descripciones*/
-    --text-lg: 1.25rem; /*Subtitulos*/
-    --text-xl: 1.80rem; /*Titulos*/
-    --text-hero: 2.5rem; /*Hero*/
+    --border-subtle: rgba(255, 255, 255, 0.06);
+    --border-accent: rgba(124, 58, 237, 0.35);
 
-    --border-sm: 1rem;
-    --border-md: 1.25rem;
-    --border-lg: 1.5rem;
-    --border-xl: 2rem;
+    /* --- Tipografía --- */
+    --font-display: 'Clash-Display', system-ui, sans-serif;
+    --font-body: 'Satoshi', system-ui, sans-serif;
+    --font-mono: 'JetBrains Mono', ui-monospace, monospace;
+
+    /* --- Radios --- */
+    --radius-btn: 12px;
+    --radius-card: 16px;
+    --radius-tag: 6px;
+    --radius-img: 20px;
+    --radius-input: 10px;
+
+    /* --- Layout / ritmo --- */
+    --container: 1100px;
+    --gutter: 24px;
+    --section-pad: 90px;
+    --card-gap: 20px;
+
+    /* --- Sombras --- */
+    --shadow-card-hover: 0 8px 32px rgba(124, 58, 237, 0.12);
+    --shadow-cta-hover: 0 0 24px rgba(124, 58, 237, 0.4);
+
+    /* --- Curvas de movimiento --- */
+    --ease-natural: cubic-bezier(0.4, 0, 0.2, 1);
+    --t-fast: 0.25s ease;
+    --t-card: 0.3s var(--ease-natural);
+}
+
+@media (max-width: 768px) {
+    :root {
+        --section-pad: 60px;
+        --gutter: 20px;
+    }
 }
